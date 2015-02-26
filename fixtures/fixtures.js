@@ -1,0 +1,3 @@
+steal(
+    './captains.js'
+);

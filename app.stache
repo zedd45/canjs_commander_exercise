@@ -1,0 +1,2 @@
+<favorites-display captains="{captains}"></favorites-display>
+<data-table captains="{captains}"></data-table>

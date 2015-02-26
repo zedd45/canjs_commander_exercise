@@ -1,0 +1,14 @@
+<div class="panel panel-default favorites-display">
+  {{! this could be more generic? like a panel widget }}
+  <div class="panel-heading">Favorites</div>
+  <div class="panel-body">
+    {{#each captains}}
+        {{#if favorited}}
+        {{! data helper assigns the current context to this name ('captain', in this case) }}
+        <button class="btn btn-primary" type="button" {{data 'captain'}}>
+          {{fullName}} <span class="glyphicon glyphicon-star"></span>
+        </button>
+        {{/}}
+    {{/each}}
+  </div>
+</div>

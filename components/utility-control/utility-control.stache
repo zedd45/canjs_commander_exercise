@@ -1,0 +1,2 @@
+<span class="glyphicon favorite glyphicon-star{{^if favorited}}-empty{{/if}}"></span>
+<span class="glyphicon glyphicon-remove"></span>

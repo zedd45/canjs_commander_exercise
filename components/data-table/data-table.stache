@@ -1,0 +1,29 @@
+<table class="table table-bordered table-responsive table-hover data-table">
+    <thead>
+        <tr>
+            <th>{{! upvote column }}</th>
+            <th>Points</th>
+            <th>Looks</th>
+            <th>Name</th>
+            <th>Ship</th>
+            <th>{{! favorite / delete controls }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each captains}}
+        <tr>
+            <td class="control-column">
+                <vote-control captain="{.}"></vote-control>
+            </td>
+            <td>{{points}}</td>
+            <td><img src="{{looks}}" class="img-responsive" alt="Image of {{fullName}}"/></td>
+            <td class="friendly-name">{{fullName}}</td>
+            <td class="friendly-name">{{shipName}}</td>
+            <td class="control-column">
+                <utility-control captain="{.}"></utility-control>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
