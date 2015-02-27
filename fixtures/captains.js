@@ -1,4 +1,8 @@
-steal('can', 'faker', 'can/util/fixture', function(can, faker) {
+steal(
+	'can', 
+	'faker', 
+	'can/util/fixture', 
+	function(can, faker) {
 
 	var store = can.fixture.store(10, function(i) {
 		return {
